@@ -19,7 +19,8 @@
 
 
 ### Built With
-* React (No Hooks)
+* React
+* React Hooks
 * YouTube API
 * Semantic UI
 * CSS Griid
