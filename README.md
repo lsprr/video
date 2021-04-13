@@ -2,7 +2,7 @@
   <a href="https://github.com/lsprr/video">
     <img src="./demo/video.png">
   </a>
-  <h1 align="center">Vdie Player</h1>
+  <h1 align="center">Video Player</h1>
 </p>
 
 ## Table of Contents
