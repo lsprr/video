@@ -4,6 +4,8 @@ import SearchBar from "./SearchBar";
 import VideoList from "./VideoList";
 import VideoDetail from "./VideoDetail";
 
+import "./App.css";
+
 const App = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [videos, search] = useVideos("");
@@ -13,9 +15,9 @@ const App = () => {
   }, [videos]);
 
   return (
-    <div className="ui container">
+    <main className="ui container">
       <SearchBar onFormSubmit={search} />
-      <div className="ui stackable grid">
+      <section className="ui stackable grid">
         <div className="ui row">
           <div className="eleven wide column">
             <VideoDetail video={selectedVideo} />
@@ -24,8 +26,8 @@ const App = () => {
             <VideoList videos={videos} onVideoSelect={setSelectedVideo} />
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 

@@ -14,14 +14,19 @@ const SearchBar = ({ onFormSubmit }) => {
   };
 
   return (
-    <div className="search-bar ui segment">
+    <section className="search-bar ui segment">
       <form className="ui form" onSubmit={onSubmit}>
         <div className="field">
-          <label>Video Search</label>
-          <input type="text" value={term} onChange={onInputChange} />
+          <label htmlFor="video-search">Video Search</label>
+          <input
+            type="text"
+            id="video-search"
+            value={term}
+            onChange={onInputChange}
+          />
         </div>
       </form>
-    </div>
+    </section>
   );
 };
 

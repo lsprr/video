@@ -1,0 +1,12 @@
+@media screen and (max-width: 1112px) {
+    .ui.grid > .row {
+        flex-direction: column;
+    }
+    .ui.grid >.row > [class*="five wide"].column,
+    .ui.grid >.row > [class*="eleven wide"].column {
+        width: 100% !important;
+    }
+    .ui.grid >.row > [class*="five wide"].column {
+        margin-top: 1rem;
+    }
+}
